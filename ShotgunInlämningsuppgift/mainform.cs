@@ -58,7 +58,9 @@ namespace ShotgunInlämningsuppgift
             resultat.checkavinst(this);
             if(DatorVinst == true)
             {
-                if (MessageBox.Show("Vill du spela igen?", "Du har förlorat!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                lstAction.Items.Add("DU FÖRLORA!!!");
+                
+                if (MessageBox.Show("Vill du spela igen?", "DU HAR FÖRLORAT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     spelaigen();
 
@@ -71,7 +73,8 @@ namespace ShotgunInlämningsuppgift
             }
             else if(SpelarVinst == true)
             {
-                if (MessageBox.Show("Vill du spela igen?", "Du har vunnit!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                lstAction.Items.Add("DU VANN!!!");
+                if (MessageBox.Show("Vill du spela igen?", "DU HAR VUNNIT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     spelaigen();
 
@@ -87,8 +90,10 @@ namespace ShotgunInlämningsuppgift
         {
             if(lblAntalDatorSkott.Text == "3")
             {
+                lstAction.Items.Clear();
                 lstAction.Items.Add("Datorn använde shotgun!");
-                if(MessageBox.Show("Vill du spela igen?", "Du har förlorat!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                lstAction.Items.Add("DU FÖRLORA!!!");
+                if (MessageBox.Show("Vill du spela igen?", "DU HAR FÖRLORAT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     spelaigen();
                     
@@ -169,8 +174,10 @@ namespace ShotgunInlämningsuppgift
 
         private void btnShotgun_Click(object sender, EventArgs e)
         {
+            lstAction.Items.Clear();
             lstAction.Items.Add("Du använde shotgun!");
-            if (MessageBox.Show("Vill du spela igen?", "Du har vunnit!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            lstAction.Items.Add("DU VANN!!!");
+            if (MessageBox.Show("Vill du spela igen?", "DU HAR VUNNIT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 spelaigen();
             }
