@@ -114,7 +114,7 @@ namespace ShotgunInlämningsuppgift
 
         private void btnLadda_Click(object sender, EventArgs e)
         {
-
+            //testarupdatebara
             if (spelarSkott == 3) { MessageBox.Show("Du kan inte få fler än 3 skott"); }
             else
             {
