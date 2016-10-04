@@ -59,7 +59,7 @@ namespace ShotgunInlämningsuppgift
             if(DatorVinst == true)
             {
                 lstAction.Items.Add("DU FÖRLORA!!!");
-                
+                MessageBox.Show("Datorn vann!!");
                 if (MessageBox.Show("Vill du spela igen?", "DU HAR FÖRLORAT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     spelaigen();
@@ -74,6 +74,7 @@ namespace ShotgunInlämningsuppgift
             else if(SpelarVinst == true)
             {
                 lstAction.Items.Add("DU VANN!!!");
+                MessageBox.Show("Du vann!!");
                 if (MessageBox.Show("Vill du spela igen?", "DU HAR VUNNIT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     spelaigen();
@@ -93,6 +94,7 @@ namespace ShotgunInlämningsuppgift
                 lstAction.Items.Clear();
                 lstAction.Items.Add("Datorn använde shotgun!");
                 lstAction.Items.Add("DU FÖRLORA!!!");
+                MessageBox.Show("Datorn vann!");
                 if (MessageBox.Show("Vill du spela igen?", "DU HAR FÖRLORAT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     spelaigen();
@@ -177,6 +179,7 @@ namespace ShotgunInlämningsuppgift
             lstAction.Items.Clear();
             lstAction.Items.Add("Du använde shotgun!");
             lstAction.Items.Add("DU VANN!!!");
+            MessageBox.Show("Du vann!!");
             if (MessageBox.Show("Vill du spela igen?", "DU HAR VUNNIT!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 spelaigen();
