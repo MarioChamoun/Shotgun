@@ -92,7 +92,7 @@
             // 
             // btnShotgun
             // 
-            this.btnShotgun.Location = new System.Drawing.Point(213, 239);
+            this.btnShotgun.Location = new System.Drawing.Point(213, 205);
             this.btnShotgun.Name = "btnShotgun";
             this.btnShotgun.Size = new System.Drawing.Size(75, 23);
             this.btnShotgun.TabIndex = 6;
@@ -105,7 +105,7 @@
             this.lstAction.FormattingEnabled = true;
             this.lstAction.Location = new System.Drawing.Point(12, 68);
             this.lstAction.Name = "lstAction";
-            this.lstAction.Size = new System.Drawing.Size(195, 199);
+            this.lstAction.Size = new System.Drawing.Size(195, 160);
             this.lstAction.TabIndex = 7;
             // 
             // lblAntalDatorSkott
@@ -129,7 +129,7 @@
             // 
             // btnStartaSpel
             // 
-            this.btnStartaSpel.Location = new System.Drawing.Point(12, 273);
+            this.btnStartaSpel.Location = new System.Drawing.Point(12, 234);
             this.btnStartaSpel.Name = "btnStartaSpel";
             this.btnStartaSpel.Size = new System.Drawing.Size(75, 23);
             this.btnStartaSpel.TabIndex = 10;
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 304);
+            this.ClientSize = new System.Drawing.Size(300, 264);
             this.Controls.Add(this.lblResultat);
             this.Controls.Add(this.btnStartaSpel);
             this.Controls.Add(this.lblAntalDatorSkott);

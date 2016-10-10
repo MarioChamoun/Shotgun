@@ -20,7 +20,6 @@ namespace ShotgunInlämningsuppgift
         public bool DatorVinst { get; set; }
         public bool SpelarVinst { get; set; }
         int spelarSkott = 0;
-        int datorSkott = 0;
         Spelare nyspelare = new Spelare();
         resultat resultat = new resultat();
         Dator nydator = new Dator();
